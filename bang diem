@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Điểm Học Tập</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 40px;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .header-left img {
+            width: 77px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .header-left h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header-left h1:last-child {
+            text-decoration: underline;
+        }
+        .header-right {
+            text-align: center;
+        }
+        .header-right h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header-right h3 {
+            margin: 0;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+        .center-header {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .center-header h2 {
+            font-size: 22px;
+            margin: 0;
+        }
+        .student-info, .student-info-right {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .student-info-left {
+            width: 50%;
+            float: left;
+        }
+        .student-info-right {
+            width: 50%;
+            float: right;
+            text-align: right;
+        }
+        .academic-result {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            clear: both;
+            margin-top: 20px;
+        }
+        .academic-result th, .academic-result td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+        }
+        .academic-result th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="actvn_big_icon.png" alt="Logo">
+            <div>
+                <h1>BỘ GIÁO DỤC & ĐÀO TẠO</h1>
+                <h1>HỌC VIỆN KĨ THUẬT MẬT MÃ</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <h1>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h1>
+            <h3>Độc lập - Tự do - Hạnh phúc</h3>
+        </div>
+    </div>
+
+    <div class="center-header">
+        <h2>BẢNG ĐIỂM HỌC TẬP</h2>
+        <p>(Theo QĐ công nhận TN số 2345/QĐ-ĐHĐN ngày 08/03/2011)</p>
+    </div>
+
+    <div class="student-info">
+        <div class="student-info-left">
+            <p><strong>Họ và tên:</strong> ĐÀO VĨNH HÙNG</p>
+            <p><strong>Ngày sinh:</strong> 22/08/2003</p>
+        </div>
+        <div class="student-info-right">
+            <p><strong>Nơi sinh:</strong> HẢI PHÒNG</p>
+            <p><strong>Hệ đào tạo:</strong> HỆ DÂN SỰ</p>
+            <p><strong>Khóa học:</strong> 2021-2026</p>
+        </div>
+    </div>
+
+    <table class="academic-result">
+        <tr>
+            <th>STT</th>
+            <th>Tên học phần</th>
+            <th>Học kỳ</th>
+            <th>ĐVHT</th>
+            <th>Điểm HP 1</th>
+            <th>Điểm HP 2</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>TRIẾT HỌC MAC-LENIN</td>
+            <td>1</td>
+            <td>6</td>
+            <td>10</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>AN TOÀN CSDL</td>
+            <td>1</td>
+            <td>4</td>
+            <td>9</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>TIẾNG ANH</td>
+            <td>1</td>
+            <td>3</td>
+            <td>10</td>
+            <td>8</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        <tr>
+            <td colspan="3"><strong>Điểm trung bình chung cả năm:</strong></td>
+            <td colspan="3">9</td>
+        </tr>
+    </table>
+</body>
+</html>
